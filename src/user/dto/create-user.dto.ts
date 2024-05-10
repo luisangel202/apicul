@@ -6,11 +6,11 @@ export class CreateUserDto{
     } )
 
   email: string;
-@MinLength(3,{
-    message:'Minimo 10 caracteres'
+@MinLength(4,{
+    message:'Minimo 4 caracteres'
 })
-@MaxLength(20,{
-    message:'Maximo 15 caracteres'
+@MaxLength(10,{
+    message:'Maximo 10 caracteres'
 })
   @IsNotEmpty()
   firstName: string;
