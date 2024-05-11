@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class User {
@@ -23,4 +23,6 @@ export class User {
     email: string;
   
     @Column({ default: true })
-    isActive: boolean;}
+    isActive: boolean;taskS: any;
+
+}
